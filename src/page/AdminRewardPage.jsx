@@ -16,7 +16,7 @@ export default function RewardsManagement() {
   const [error, setError] = useState('');
   const [imageFile, setImageFile] = useState(null);
 
-  const BASE_URL = "https://golden-1.onrender.com"; // ✅ Your backend base URL
+  const BASE_URL = "https://golden-3.onrender.com"; // ✅ Your backend base URL
   const token = localStorage.getItem("token");
 
   // Fetch rewards
