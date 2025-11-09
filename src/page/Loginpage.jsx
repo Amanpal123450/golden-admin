@@ -1,7 +1,8 @@
+
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-const LoginPage = ({ onLogin }) => {
+export default function LoginPage({ onLogin }){
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -125,4 +126,4 @@ const LoginPage = ({ onLogin }) => {
   );
 };
 
-export default LoginPage;
+

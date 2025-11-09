@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 // import LoginPage from "./page/LoginPage";
-import LoginPage from "./pages/LoginPage";
+// import LoginPage from "./pages/LoginPage";
+import LoginPage from "./page/Loginpage.jsx"; // 🔹 Updated import to match filenam e
 
 import AdminLayout from "./layout/AdminLayout"; // 🔹 Common layout with Sidebar
 import AdminRewardPage from "./page/AdminRewardPage";
