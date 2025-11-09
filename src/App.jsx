@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     const token = localStorage.getItem("token");
     setIsLoggedIn(!!token);
-  }, []);
+  }, [])
 
   const handleLogout = () => {
     if (window.confirm("Are you sure you want to logout?")) {
