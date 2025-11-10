@@ -8,6 +8,7 @@ import AdminLayout from "./layout/AdminLayout"; // 🔹 Common layout with Sideb
 import AdminRewardPage from "./page/AdminRewardPage";
 import Dashboard from "./page/Dashboard";
 import "./App.css";
+import AdminVerificationPage from "./component/AdminVerificationPage.jsx";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -50,6 +51,7 @@ function App() {
               <Route index element={<Navigate to="/dashboard" replace />} />
               <Route path="dashboard" element={<Dashboard />} />
               <Route path="admin/rewards" element={<AdminRewardPage />} />
+              <Route path="admin/verify" element={<AdminVerificationPage />} />
               <Route path="*" element={<Navigate to="/dashboard" replace />} />
             </Route>
           </>

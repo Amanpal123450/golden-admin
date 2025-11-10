@@ -13,6 +13,7 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen, activeMenu, setAc
   const menuItems = [
     { id: "dashboard", icon: LayoutDashboard, label: "Dashboard", path: "/" },
     { id: "rewards", icon: Users, label: "Create Coupon", path: "/admin/rewards" },
+    { id: "verify", icon: Users, label: "verify User", path: "/admin/verify" },
   ];
 
   return (
