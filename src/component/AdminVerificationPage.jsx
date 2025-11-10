@@ -15,7 +15,7 @@ export default function AdminVerificationPage() {
   const fetchVerifications = async () => {
     try {
       setLoading(true);
-      const res = await axios.get("http://localhost:5000/api/verification", {
+      const res = await axios.get("https://golden-4.onrender.com/api/verification", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -38,7 +38,7 @@ export default function AdminVerificationPage() {
     if (!window.confirm("Are you sure you want to delete this submission?"))
       return;
     try {
-      await axios.delete(`http://localhost:5000/api/verification/${id}`, {
+      await axios.delete(`https://golden-4.onrender.com/api/verification/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
